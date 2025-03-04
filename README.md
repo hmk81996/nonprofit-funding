@@ -27,6 +27,6 @@ The purpose of this analysis is to predict whether funding applicants will be su
 
 # Summary
 
-The KerasTuner automated optimization outperformed the manually optimized model, achieving an accuracy of .7336 compared to .7286 for the latter. This suggests that it is beneficial to use the automated tuning process to explore hyperparameter combinations.
+The KerasTuner automated optimization outperformed the manually optimized model, achieving an accuracy of .7336 compared to a best result of .7286 for the latter. This suggests that it is beneficial to use the automated tuning process to explore hyperparameter combinations.
 
 However, to improve classfication accuracy, it would be worth exploring ensemble methods such as the Random Forest to capture nonlinear relationships between features.
