@@ -21,7 +21,7 @@ The purpose of this analysis is to predict whether funding applicants will be su
   
       ![KerasTunerResults](images/autooptimization_results.jpg)
     
-    - Optimization 3: Using the hyperparameters above, I created additional layers and experimented with the number of epochs, trying first 20, then 75 and then 100 >>  Accuracy: 0.7272
+    - Optimization 3: Using the hyperparameters above, I created additional layers and experimented with the number of epochs, trying first 20, then 75 and then 100 >>  Accuracy: 0.7272 (reflects the last attempt of 100 epochs)
 
     - Despite adjusting the number of layers and the number of epochs, I was not ultimately able achieve the target model performance of 75%.
 
