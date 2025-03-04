@@ -18,6 +18,8 @@ The purpose of this analysis is to predict whether funding applicants will be su
     - Optimization 1: first hidden layer (10 units, relu activation), second hidden layer (5 units, relu activation), output layer (1 unit, sigmoid activation) >> Accuracy: 0.7286
 
     - Optimization 2: I used KerasTuner to automate the process of finding the best hyperparameters. It achieved an accuracy of 0.7336
+  
+      ![KerasTunerResults](images/autooptimization_results.jpg)
     
     - Optimization 3: Using the hyperparameters above, I created additional layers and experimented with the number of epochs, trying first 20, then 75 and then 100 >>  Accuracy: 0.7272
 
