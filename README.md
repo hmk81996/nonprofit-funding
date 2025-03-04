@@ -1,4 +1,5 @@
 # nonprofit-funding
+Deep Learning - Data Analytics Course Module 21
 
 # Overview
 The purpose of this analysis is to predict whether funding applicants will be successful if funded by the nonprofit Alphabet Soup. The dataset is in a CSV containing more than 34,000 organizations that have already received funding from this nonprofit.
@@ -12,24 +13,13 @@ The purpose of this analysis is to predict whether funding applicants will be su
 
  - Compiling, Training, and Evaluating the Model
     
-    Initial Model:  first hidden layer (3 units, relu activation), second hidden layer (3 units, relu activation), output layer (1 unit, sigmoid activation) >> Accuracy: 0.7258
+    - Initial Model:  first hidden layer (3 units, relu activation), second hidden layer (3 units, relu activation), output layer (1 unit, sigmoid activation) >> Accuracy: 0.7258
 
-    Optimization 1: first hidden layer (10 units, relu activation), second hidden layer (5 units, relu activation), output layer (1 unit, sigmoid activation) >> Accuracy: 0.7286
+    - Optimization 1: first hidden layer (10 units, relu activation), second hidden layer (5 units, relu activation), output layer (1 unit, sigmoid activation) >> Accuracy: 0.7286
 
-    Optimization 2: I used KerasTuner to automate the process of finding the best hyperparameters. It achieved an accuracy of 0.7336
-        hyperparameters = {
-        'activation': 'relu',
-        'first_units': 5,  # This is for the input layer
-        'num_layers': 5,   # Total number of hidden layers
-        'units_0': 5,      # First hidden layer
-        'units_1': 5,      # Second hidden layer
-        'units_2': 7,      # Third hidden layer
-        'units_3': 5,      # Fourth hidden layer
-        'units_4': 7,      # Fifth hidden layer
-        'tuner/epochs': 20,
-        }
+    - Optimization 2: I used KerasTuner to automate the process of finding the best hyperparameters. It achieved an accuracy of 0.7336
     
-    Optimization 3: Using the hyperparameters above, I created additional layers and experimented with the number of epochs, trying first 20, then 75 and then 100 >>  Accuracy: 0.7272
+    - Optimization 3: Using the hyperparameters above, I created additional layers and experimented with the number of epochs, trying first 20, then 75 and then 100 >>  Accuracy: 0.7272
 
     - Despite adjusting the number of layers and the number of epochs, I was not ultimately able achieve the target model performance of 75%.
 
